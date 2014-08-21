@@ -1,0 +1,3 @@
+training_battery:
+    resource: "@TrainingBatteryBundle/Resources/config/routing.yml"
+    prefix:   /

@@ -1,0 +1,6 @@
+training_battery_homepage:
+    pattern:     /
+    defaults: { _controller: TrainingBatteryBundle:Main:index }
+training_battery_hellopage:
+    path:     /hello/{name}
+    defaults: { _controller: TrainingBatteryBundle:Main:hello }
