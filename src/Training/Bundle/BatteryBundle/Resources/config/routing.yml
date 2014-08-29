@@ -4,3 +4,12 @@ training_battery_homepage:
 training_battery_hellopage:
     path:     /hello/{name}
     defaults: { _controller: TrainingBatteryBundle:Main:hello }
+training_battery_addpage:
+    path:     /batterypack/new
+    defaults: { _controller: TrainingBatteryBundle:Main:addBattery }
+training_battery_succespage:
+    path:     /success
+    defaults: { _controller: TrainingBatteryBundle:Main:success }
+training_battery_statisticspage:
+    path:     /statistics
+    defaults: { _controller: TrainingBatteryBundle:Main:statistics }

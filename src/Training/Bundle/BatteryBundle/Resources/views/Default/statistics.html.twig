@@ -1,0 +1,23 @@
+<h1>{{ 'Welcome to Recycle Batteries application'|trans }}</h1>
+
+<div>
+    Click <a href="{{ url('training_battery_addpage') }}">here</a> to add new batteries to the box
+    <br/>
+    Statistics:<br/>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Battery type</th>
+            <th>Total count</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for battery in batteries %}
+            <tr>
+                <td class="battery-type">{{ battery.type }}</td>
+                <td class="battery-count">{{ battery.count }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
