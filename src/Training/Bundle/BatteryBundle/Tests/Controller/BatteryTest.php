@@ -39,6 +39,8 @@ class BatteryTest extends WebTestCase
         $this->batteryAdd('AA', 4);
         $this->batteryAdd('AAA', 3);
         $this->batteryAdd('AA', 1);
+        //todo: it should be one test method: at first we are adding batteries, then we check statistics page
+        //todo: test methods in generally are independent, if you have any purge mechanism - it should be executed after each test
     }
 
     /**
