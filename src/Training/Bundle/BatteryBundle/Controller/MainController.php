@@ -37,6 +37,7 @@ class MainController extends Controller
             ->add('name', 'text')
             ->add('save', 'submit', array('label' => 'Create'))
             ->getForm();
+        //todo: it is better to configure form to work with your class. In this case $form->getData() will return created object, not array
         $form->handleRequest($request);
         if ($form->isValid()) {
             $data = $form->getData();
@@ -44,6 +45,8 @@ class MainController extends Controller
             $repository = $em->getRepository('TrainingBatteryBundle:Battery');
             /** @var Battery $battery */
             if ($battery = $repository->findOneBy(array('type' => $data['type']))) {
+                //todo: you didnt understand the task correctly. Each form submit should generate an object in database, then there will be sence of "name" field.
+                //todo: to get the statistics you had to create custom query with "GROUP BY `type`" statement.
                 $battery->setCount($battery->getCount() + $data['count']);
             } else {
                 $battery = new Battery();
