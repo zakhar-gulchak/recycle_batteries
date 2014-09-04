@@ -1,5 +1,5 @@
 parameters:
-#    training_battery.example.class: Training\Bundle\BatteryBundle\Example
+#    training_battery.example.class: Training\BatteryBundle\Example
 
 services:
 #    training_battery.example:

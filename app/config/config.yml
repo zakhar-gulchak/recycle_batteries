@@ -59,6 +59,15 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
+        mappings:
+            # An array of mappings, which may be a bundle name or something else
+            TrainingBatteryBundle:
+                mapping:              true
+                type:                 'annotation'
+                dir:                  ~
+                alias:                ~
+                prefix:               ~
+                is_bundle:            ~
 
 # Swiftmailer Configuration
 swiftmailer:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\Bundle\BatteryBundle\Entity;
+namespace Training\BatteryBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Battery
  *
  * @ORM\Table(name="battery")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Training\BatteryBundle\Entity\BatteryRepository")
  */
 class Battery
 {
@@ -29,7 +29,7 @@ class Battery
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, nullable=false)
+     * @ORM\Column(name="name", type="string", length=255, nullable=true)
      */
     private $name;
 

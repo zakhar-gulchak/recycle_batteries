@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\Bundle\BatteryBundle;
+namespace Training\BatteryBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
